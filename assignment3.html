@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 Web Page</title>
+    <meta name="description" content="This is the Assignment 3 web page.On this page, you can find examples of HTML Forms Attributes and Elements,
+    HTML5 Video tagging, Image Mapping, and my Tutorial Video on forms.">
+    <meta name="keywords" content="Assignment 3, Flexbox, Gird, Application Form, HTML5 Video, HTML 5 Form elements, 5 minutes Tutorial, Image Mapping">
+    <meta name="author" content="Tatiana Vutcariov">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="main_wrapper">
+    <header id="header">
+        <nav id="flex-menu">
+            <ul>
+            <li><a href="#application-form" class="flex-item">Application Form</a></li>
+            <li><a href="#html5-videos" class="flex-item">HTML5 Video</a></li>
+            <li><a href="#form-elements" class="flex-item">HTML 5 Form elements</a></li>
+            <li><a href="#video-tutorial" class="flex-item">5 minutes Tutorial</a></li>
+            <li><a href="#mapping" class="flex-item">Image Mapping</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to my web site</h1>
+        <h3> On this page, I will demonstrate my ability to use HTML Form Attributes and Elements, HTML5 Video tags, Image Mapping, and also Grid and Flexbox Layouts.</h3>
+        <h3>Purpose of this website is to improve my HTML and CSS skills.</h3>
+        <a href="#video-tutorial" class="button">Check My Tutorial Video</a>
+    </header>
+<main id="main">
+    <section id="application-form">
+        <h2>Application Form</h2>
+        <div id="wrapper1">
+            <form method="get">
+                <fieldset>
+                    <legend>Application Form</legend>
+                    <div class="col col1">
+                        <label for="flname">Full Name</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="text" id="flname" name="flname" size="30" required>
+                    </div>
+                    <div class="col col1">
+                        <label for="email1">Email</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="email" id="email1" name="email" size="30" required>
+                    </div>
+                    <div class="col col1">
+                        <label>Gender</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </div>
+                    <div class="col col1">
+                        <label for="nationality">Nationality</label>
+                    </div>
+                    <div class="col col2">
+                        <select name="nationality" id="nationality">
+                            <option value="select">-Select-</option>
+                            <option value="1">Canadian</option>
+                            <option value="2">British</option>
+                            <option value="3">American</option>
+                            <option value="4">Russian</option>
+                            <option value="5">Chinese</option>
+                            <option value="6">Indian</option>
+                        </select>
+                    </div>
+                    <div class="col col1">
+                        <label>Skills</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="checkbox" name="skill1" value="aspnet">Asp.Net
+                        <input type="checkbox" name="skill2" value="jquery">jQuery <br>
+                        <input type="checkbox" name="skill3" value="mvc">MVC
+                        <input type="checkbox" name="skill4" value="sql">Sql Server
+                    </div>
+                    <div class="col col1">
+                        <label>Post applying for</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="radio" name="post" value="trainee" required>Trainee
+                        <input type="radio" name="post" value="software engineer">Software engineer<br>
+                        <input type="radio" name="post" value="team leader">Team Leader
+                        <input type="radio" name="post" value="project manager">Project manager
+                    </div>
+                    <div class="col col1">
+                        <label for="resume">Upload Resume:</label>
+                    </div>
+                    <div class="col col2">
+                        <input type="file" id="resume" name="resume" accept=".doc,.pdf,.docx">
+                    </div>
+                    <div class="col col1">
+                        <label for="presume">Paste your resume</label>
+                    </div>
+                    <div class="col col2">
+                        <textarea id="presume" name="presume" rows="6" cols="30"></textarea>
+                    </div>
+                    <div class="col col3">
+                        <input type="checkbox" id="notification" name="notification" value="agree">
+                        <label for="notification">Notify me the status via Email</label>
+                    </div>
+                    <div class="col col3">
+                        <input type="radio" name="agree" value="Agree" required>
+                        <label>I agree to your terms &amp conditions</label>
+                    </div>
+                    <div class="col col4">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="col col5">
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section id="html5-videos">
+        <h2>HTML5 Videos - My Hobbies</h2>
+        <ul>
+            <li>
+                <div class="card">
+                    <video controls>
+                        <source src="assets/img/travel.mp4" type="video/mp4">
+                        <!--This video is free for use from this website https://www.pexels.com/ -->
+                    </video>
+                    <div class="card-text">
+                        <h3 class="card-title">Road Trips</h3>
+                        <p>Road trips are my absolute favourite way to travel. I love hitting the road, with the wind in my hair and not a worry in the world or place to be.
+                            Road trips give you a sense of freedom as you travel on your own time, to the places you choose.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <video controls>
+                        <source src="assets/img/gaming.mp4" type="video/mp4">
+                        <!--This video is free for use from this website https://www.pexels.com/ -->
+                    </video>
+                    <div class="card-text">
+                        <h3 class="card-title">Gaming</h3>
+                        <p>A big reason why we love video games so much, I feel, is because they are an escape from our sometimes boring and monotonous lives.
+                            Sometimes it’s nice to put on the shoes of a made-up character and forget about all our troubles.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <video controls>
+                        <source src="assets/img/cooking.mp4" type="video/mp4">
+                        <!--This video is free for use from this website https://www.pexels.com/ -->
+                    </video>
+                    <div class="card-text">
+                        <h3 class="card-title">Cooking</h3>
+                        <p>Cooking allows me to let out the creative side of me. It makes me feel very comfortable in the beginning and very thankful
+                            after enjoying and tasting all that I cooked for myself, for my family or my friends.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="form-elements">
+        <h2>HTML5 Form Elements</h2>
+            <form method="get">
+                <div id="wrapper2">
+                <div class=" col col1">
+                    <label for="title">Title</label>
+                </div>
+                <div class="col col2">
+                    <input type="text" id="title" name="title" size="30" placeholder="Select one or enter your own" required>
+                </div>
+                <div class="col col1">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col col2">
+                    <input type="text" id="name" name="name" size="30" pattern="[^0-9]+" placeholder="John Doe" required>
+                </div>
+                <div class="col col1">
+                    <label for="phone">Phone number</label>
+                </div>
+                <div class="col col2">
+                    <input type="tel" id="phone" name="phone" size="30" pattern="[0-9]+" placeholder="+1 1234567890"> (optional)
+                </div>
+                <div class="col col1">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="col col2">
+                    <input type="email" id="email" name="email" size="30">
+                </div>
+                <div class="col col1">
+                    <label for="url">Your website</label>
+                </div>
+                <div class="col col2">
+                    <input  type="url" id="url" name="url" size="30" placeholder="https://example.com"
+                            pattern="https://.*"> (optional)
+                </div>
+                <div class="col col1">
+                    <label for="item">Nr. of items to order </label>
+                </div>
+                <div class="col col2">
+                    <input type="number" id="item" name="item" min="1" max="10" required> (1-10)
+                </div>
+                <div class="col col1">
+                    <label for="length">Length</label>
+                </div>
+                <div class="col col2">
+                    <input type="range"  id="length" name="length" min="0" max="100" step="10">  1m (in 10cm increments)
+                </div>
+                <div class="col col1">
+                    <label for="date">Delivery date</label>
+                </div>
+                <div class="col col2">
+                    <input type="date" id="date" name="date" min="2020-12-16" required> (minimum 16 December 2010)
+                </div>
+                <div class="col col1">
+                    <label for="time">Time of delivery</label>
+                </div>
+                <div class="col col2">
+                    <input type="time" id="time" name="time" step="1800" required> (in 30 min increments)
+                </div>
+                <div class="col col1">
+                    <label for="color">Color of the item</label>
+                </div>
+                <div class="col col2">
+                    <input type="color" id="color" name="color" value="#ed1c24"> (default red)
+                </div>
+                <div class="col col4">
+                    <input type="image" class="form-button" src="assets/img/submit.png" alt="Submit">
+                    <!--This button image is created by author of this website thru http://buttonoptimizer.com/ -->
+                </div>
+                <div class="col col5">
+                    <button type="reset" class="form-button"><img src="assets/img/reset.png" alt="Reset"></button>
+                    <!--This button image is created by author of this website thru http://buttonoptimizer.com/ -->
+                </div>
+                </div>
+            </form>
+    </section>
+    <section id="video-tutorial">
+        <h2>Video Tutorial</h2>
+        <div id="video_card">
+        <iframe src="https://www.youtube.com/embed/iBf4_g0W5SM"></iframe>
+        <article>In this video tutorial, I will demonstrate to you HTML5 Form Input Elements and Attributes.
+            Also, you'll learn how to use the label tag, and how to link a label to its corresponding form field using the for and id attributes.
+            I made this video as short as possible. Please enjoy it and leave meaningful comments!</article>
+        </div>
+    </section>
+    <section id="mapping">
+        <h2>Image Mapping</h2>
+        <div id="map">
+            <h3>Click on the Laptop, the Sunglasses, or the Cup to visit the related web page.</h3>
+            <img src="assets/img/imagemapping.jpg" alt="my image map" usemap="#image_map">
+            <!--This image is free from this website https://www.pexels.com/ -->
+            <map name="image_map">
+                <area shape="rect" coords="493,76,1054,452" alt="laptop" href="https://www.lenovo.com/" target="_blank">
+                <area shape="circle" coords="296,361,57" alt="cup" href="https://www.starbucks.ca/" target="_blank">
+                <area shape="poly"
+                      coords="307,155,327,188,316,220,300,236,273,236,257,234,246,234,240,226,331,46,346,50,361,68,376,87,369,121,355,138,333,145,315,145,310,149"
+                      alt="sunglasses" href="https://www.ray-ban.com/canada/en/sunglasses/" target="_blank">
+            </map>
+        </div>
+    </section>
+</main>
+    <footer>
+        <script src=" https://my.gblearn.com/js/loadscript.js"></script>
+    </footer>
+</div>
+</body>
+</html>
